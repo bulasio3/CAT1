@@ -59,7 +59,30 @@
     object-position: center; 
     display: block;
 }
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Georgia, "Times New Roman", serif;
+  color: #fff;
 
+  /* dark overlay first, photo underneath */
+  background:
+    linear-gradient(rgba(45, 25, 60, 0.75), rgba(45, 25, 60, 0.75)),
+    url("ayd.jpg") center / cover no-repeat fixed;
+}
+
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px;
+  background: rgba(0, 0, 0, 0.35);   /* soft panel behind the text */
+  border-radius: 12px;
+}
+
+h1 { color: #e8503a; text-shadow: 0 2px 6px rgba(0,0,0,.6); }
+h2 { color: #2fc4c4; text-shadow: 0 2px 6px rgba(0,0,0,.6); }
+p, li { line-height: 1.7; font-size: 1.1rem; }
+hr { border: 0; border-top: 1px solid rgba(255,255,255,.5); }
         
       
 
